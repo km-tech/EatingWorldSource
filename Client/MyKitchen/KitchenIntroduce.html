@@ -8,19 +8,18 @@
 	<script type="text/javascript" src= "lib\js\jquery.js"></script>
 	<script type="text/javascript" src="lib\js\jquery.mobile-1.4.5.min.js"></script>
 </head>
-<body>
-	<div data-role="page" id="testpage">
-		<div data-role="header">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" class="ui-btn-active ui-state-persist">餐厅介绍</a></li>
-					<li><a href="#">菜单</a></li>
-					<li><a href="#">评论</a></li>
-				</ul>
-			</div>
-		</div><!-- /header -->
-		<img src="img/1.jpg" width = "100%" heigh = "30%" /></img>
-		<div><h3>如意小厨</h3>
+<body>	
+	<div data-role="tabs" id="tabs">
+	  <div data-role="navbar">
+	    <ul>
+	      <li><a href="#one" data-ajax="false">餐厅介绍</a></li>
+	      <li><a href="#two" data-ajax="false">菜单</a></li>
+	      <li><a href="ajax-content-ignore.html" data-ajax="false">评论</a></li>
+	    </ul>
+	  </div>
+	  <div id="one" class="ui-body-d ui-content">
+	    <img src="img/1.jpg" width = "100%" heigh = "30%" /></img>
+	    <div><h3>如意小厨</h3>
 			<div id="default" style="cursor: pointer;">
 			    <img alt="1" src="lib\images\star-on.png" title="bad"></img>
 				<img alt="2" src="lib\images\star-on.png" title="poor"></img>
@@ -32,5 +31,15 @@
 				<h5>时间</h5>
 			</div>
 		</div>
+	  </div>
+	  <div id="two">
+	    <ul data-role="listview" data-inset="true">
+	        <li><a href="#">Acura</a></li>
+	        <li><a href="#">Audi</a></li>
+	        <li><a href="#">BMW</a></li>
+	        <li><a href="#">Cadillac</a></li>
+	        <li><a href="#">Ferrari</a></li>
+	    </ul>
+	  </div>
 	</div>
 </body>
