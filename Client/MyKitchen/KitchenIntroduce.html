@@ -4,21 +4,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>testForm</title>
-    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
-	<script type="text/javascript" src= "jquery.mobile-1.4.5.js"></script>
-	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="lib\js\jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src= "lib\js\jquery.js"></script>
+	<script type="text/javascript" src="lib\js\jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
 	<div data-role="page" id="testpage">
-	<div class="ui-grid-b">
-    	<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:20px" type = "button">餐厅介绍</div></div>
-    	<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:20px" type = "button">菜单</div></div>
-    	<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:20px" type = "button">评论</div></div>
-	</div><!-- /grid-a -->
-	<img src="4_2.bmp" width = "100%" heigh = "30%" />
-			<a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext">Delete</a>
-
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-btn-active ui-state-persist">餐厅介绍</a></li>
+					<li><a href="#">菜单</a></li>
+					<li><a href="#">评论</a></li>
+				</ul>
+			</div>
+		</div><!-- /header -->
+		<img src="img/1.jpg" width = "100%" heigh = "30%" /></img>
+		<div><h3>如意小厨</h3>
+			<div id="default" style="cursor: pointer;">
+			    <img alt="1" src="lib\images\star-on.png" title="bad"></img>
+				<img alt="2" src="lib\images\star-on.png" title="poor"></img>
+				<img alt="3" src="lib\images\star-on.png" title="regular"></img>
+				<img alt="4" src="lib\images\star-on.png" title="good"></img>
+				<img alt="5" src="lib\images\star-on.png" title="gorgeous"></img>
+			    <input type="hidden" name="score" value="5"></input>
+				<h5>北京人</h5>
+				<h5>时间</h5>
+			</div>
+		</div>
 	</div>
-
-
 </body>
