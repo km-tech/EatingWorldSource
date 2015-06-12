@@ -14,9 +14,10 @@
 	    <ul>
 	      <li><a href="#one" data-ajax="false">餐厅介绍</a></li>
 	      <li><a href="#two" data-ajax="false">菜单</a></li>
-	      <li><a href="ajax-content-ignore.html" data-ajax="false">评论</a></li>
+	      <li><a href="#three" data-ajax="false">评论</a></li>
 	    </ul>
 	  </div>
+	  <!-- page one -->
 	  <div id="one" class="ui-body-d ui-content">
 	    <img src="img/1.jpg" width = "100%" heigh = "30%" /></img>
 	    <div><h3>如意小厨</h3>
@@ -29,17 +30,70 @@
 			    <input type="hidden" name="score" value="5"></input>
 				<h5>北京人</h5>
 				<h5>时间</h5>
+				<!-- <button class = "Contact chief" id = "contact chief"> 联系厨师</button> -->
+				<a href="#" data-role= "button">联系厨师</a>
 			</div>
+			<div>
+				  <ul data-role="listview" data-inset="true">
+					<li><a href="#">
+						<img src="img/test001.JPG">
+					<h2>石锅鱼</h2>
+					</a>
+						<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+					</li>
+					<li><a href="#">
+						<img src="img/test002.JPG">
+					<h2>水煮鱼</h2>
+					</a>
+						<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+					</li>
+					<li><a href="#">
+						<img src="img/test003.JPG">
+					<h2>巫山烤鱼</h2>
+					</a>
+						<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+					</li>
+				</ul>
+			</div>
+			<p class = "Distribution description"><span>配送说明：小区一公里范围内配送。</span></p>
+			<p class = "Position"><span>相距：定位失败|</span><span class = "fare">配送费：8元</span></p>
+			<p class = "Accommodation"><span>可容纳：8人</span></p>
+
 		</div>
 	  </div>
+
+	  <!-- page two -->
 	  <div id="two">
-	    <ul data-role="listview" data-inset="true">
-	        <li><a href="#">Acura</a></li>
-	        <li><a href="#">Audi</a></li>
-	        <li><a href="#">BMW</a></li>
-	        <li><a href="#">Cadillac</a></li>
-	        <li><a href="#">Ferrari</a></li>
+		  <ul data-role="listview">
+			<li><a href="#">
+				<img src="img/test001.JPG">
+			<h2>石锅鱼</h2>
+			<p>还有13份</p>
+			<p>18元</p>
+				<a href="#" data-type = "button" data-icon = "plus" data-iconpos = "notext">添加</a>		
+			</a>
+			</li>
+			<li><a href="#">
+				<img src="img/test002.JPG">
+			<h2>水煮鱼</h2>
+				<p>还有13份</p>
+				<p>18元</p>
+				<a href="#" data-type = "button" data-icon = "plus" data-iconpos = "notext">添加</a>	
+			</a>
+			</li>
+			<li><a href="#">
+				<img src="img/test003.JPG">
+			<h2>巫山烤鱼</h2>
+				<p>还有13份</p>
+				<p>18元</p>
+				<a href="#" data-type = "button" data-icon = "plus" data-iconpos = "notext">添加</a>	
+			</a>
+			</li>
 	    </ul>
 	  </div>
+
+  	  <div id="three">
+
+  	  </div>
 	</div>
 </body>
