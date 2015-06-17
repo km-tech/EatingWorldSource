@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+    <link rel="stylesheet" href="lib\js\jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src= "lib\js\jquery.js"></script>
+	<script type="text/javascript" src="lib\js\jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>	
+	<div data-role="tabs" id="tabs">
+	  <div data-role="navbar">
+	    <ul>
+	      <li><a href="#one" data-ajax="false">餐厅介绍</a></li>
+	      <li><a href="#two" data-ajax="false">菜单</a></li>
+	      <li><a href="#three" data-ajax="false">评论</a></li>
+	    </ul>
+	  </div>
+	  <!-- page one -->
+	  <div id="one" class="ui-body-d ui-content">
+	    <img src="img/1.jpg" width = "100%" heigh = "30%" /></img>    
+			<div id="default" style="cursor: pointer;">
+			    <img alt="1" src="lib\images\star-on.png" title="bad" align = "right"></img>
+				<img alt="2" src="lib\images\star-on.png" title="poor" align = "right"></img>
+				<img alt="3" src="lib\images\star-on.png" title="regular" align = "right"></img>
+				<img alt="4" src="lib\images\star-on.png" title="good" align = "right"></img>
+				<img alt="5" src="lib\images\star-on.png" title="gorgeous" align = "right"></img>
+			    <input type="hidden" name="score" value="5"></input>
+			    <h2>如意小厨</h2>
+				<p>开放时间</p>
+				<!-- <button class = "Contact chief" id = "contact chief"> 联系厨师</button> -->
+				<a href="#" data-role= "button" display = "inline">联系厨师</a>
+			</div>
+			<hr/>
+			<div>
+				<h2>厨师风采</h2>
+				<p>常美丽 女士 北京人 3级厨师 热情好客</p>
+			</div>
+			<hr/>
+			<p class = "Distribution description"><span>配送说明：小区一公里范围内配送。</span></p>
+			<p class = "Position"><span>相距：定位失败|</span><span class = "fare">配送费：8元</span></p>
+			<p class = "Accommodation"><span>可容纳：8人</span></p>
+
+	</div>
+
+	  <!-- page two -->
+	  <div id="two">
+		  <ul data-role="listview">
+			<li><a href="#">
+				<img src="img/test001.JPG" align = "letf">
+			<h2>石锅鱼</h2>
+			<p>还有13份</p>
+			<p>18元</p>
+				<a href="#" data-type = "button" data-icon = "plus" data-iconpos = "notext">添加</a>		
+			</a>
+			</li>
+			<li><a href="#">
+				<img src="img/test002.JPG" align = "letf">
+			<h2>水煮鱼</h2>
+				<p>还有13份</p>
+				<p>18元</p>
+				<a href="#" data-type = "button" data-icon = "plus" data-iconpos = "notext">添加</a>	
+			</a>
+			</li>
+			<li><a href="#">
+				<img src="img/test003.JPG" align = "letf"> 
+			<h2>巫山烤鱼</h2>
+				<p>还有13份</p>
+				<p>18元</p>
+				<a href="#" data-type = "button" data-icon = "plus" data-iconpos = "notext">添加</a>	
+			</a>
+			</li>
+	    </ul>
+	  </div>
+
+  	  <div id="three">
+  	  	<ul data-role="listview" data-inset="true">
+  	  		<li>
+  	  			<div>
+					<h2>石锅鱼</h2> 
+					<img alt="1" src="lib\images\star-on.png" title="bad" align="right"></img>
+					<img alt="2" src="lib\images\star-on.png" title="poor" align="right"></img>
+					<img alt="3" src="lib\images\star-on.png" title="regular" align="right"></img>
+					<img alt="4" src="lib\images\star-on.png" title="good" align="right"></img>
+					<img alt="5" src="lib\images\star-on.png" title="gorgeous" align="right"></img>
+				</div>
+				<div>
+					<p>非常好吃，继续努力</p>
+					<p><span>昵称：露露</span></p><p aligh = "right"><span>2016.06.16</span></p>
+				</div>
+			</li>
+			<li>
+  	  			<div>
+					<h2>水煮鱼</h2> 
+					<img alt="1" src="lib\images\star-on.png" title="bad" align="right"></img>
+					<img alt="2" src="lib\images\star-on.png" title="poor" align="right"></img>
+					<img alt="3" src="lib\images\star-on.png" title="regular" align="right"></img>
+					<img alt="4" src="lib\images\star-on.png" title="good" align="right"></img>
+					<img alt="5" src="lib\images\star-on.png" title="gorgeous" align="right"></img>
+				</div>
+				<div>
+					<p>非常好吃，继续努力</p>
+					<p><span>昵称：露露</span></p><p aligh = "right"><span>2016.06.16</span></p>
+				</div>
+			</li>
+			<li>
+  	  			<div>
+					<h2>巫山烤鱼</h2> 
+					<img alt="1" src="lib\images\star-on.png" title="bad" align="right"></img>
+					<img alt="2" src="lib\images\star-on.png" title="poor" align="right"></img>
+					<img alt="3" src="lib\images\star-on.png" title="regular" align="right"></img>
+					<img alt="4" src="lib\images\star-on.png" title="good" align="right"></img>
+					<img alt="5" src="lib\images\star-on.png" title="gorgeous" align="right"></img>
+				</div>
+				<div>
+					<p>非常好吃，继续努力</p>
+					<p><span>昵称：露露</span></p><p aligh = "right"><span>2016.06.16</span></p>
+				</div>
+			</li>
+  	  </div>
+	</div>
+</body>

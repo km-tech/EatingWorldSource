@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>提交开店信息</title>
+    <link rel="stylesheet" href="lib\js\jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src= "lib\js\jquery.js"></script>
+	<script type="text/javascript" src="lib\js\jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div>
+		<h3 align = "middle">身份确认</h3>
+	</div>
+	<div data-role="fieldcontain">
+    	<label for="name">真实姓名:</label>
+    	<input type="text" name="text" id="name" placeholder="请填入真实姓名" data-theme="a">
+    	<label for="name">城市地区:</label>
+    	<input type="text" name="text" id="name" placeholder="所在的城市和地区" data-theme="a">
+    	<label for="name">详细地址:</label>
+    	<input type="text" name="text" id="name" placeholder="必须与上门审核的地址相同" data-theme="a">
+	</div>
+	<div>
+		<table class = "PhoneCommit" id = "PhoneCommit">
+			<tbody>
+				<tr>身份证:</tr>
+				<tr>
+					<th>正面</th>
+					<th><img src="#"></th>
+					<th><input type = "button" data-icon = "plus" data-iconpos = "notext"></th>
+				</tr>	
+				<tr>
+					<th>反面</th>
+					<th><img src="#"></th>
+					<th><input type = "button" data-icon = "plus" data-iconpos = "notext"></th>
+				</tr>	
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<input type="submit"  value="提交">
+	</div>
+</body>
