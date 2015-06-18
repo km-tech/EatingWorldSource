@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MyInfo</title>
+    <link rel="stylesheet" href="lib\js\jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src= "lib\js\jquery.js"></script>
+	<script type="text/javascript" src="lib\js\jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div>
+	<table class = "InfoTable" id = "MyTable">
+		<tbody>
+			<th>
+				<img src="">
+			</th>
+			<th>
+				<img src="">
+			</th>
+			<th>
+				<input type = "button" id = "AddChiefPic" value = "上传">
+			</th>
+		</tbody>
+	</table>
+	</div>
+  <div data-role="content">
+    <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <label for="fullname">昵称</label>
+        <input type="text" name="fullname" id="fullname" placeholder="有特色的名称会增加你的访问量">       
+        <hr/>
+        <label for="bday">性别</label>
+        <input type="date" name="bday" id="bday">
+        <hr/>
+        <label for="email">年龄</label>
+        <input type="email" name="email" id="email" >
+        <hr/>
+        <label for="email">职业</label>
+        <input type="email" name="email" id="email" >
+        <hr/>
+        <label for="email">口味</label>
+        <input type="email" name="email" id="email" >
+      </div>
+      <input type="submit" data-inline="true" value="保存">
+    </form>
+  </div>
+
+
+
+</body>

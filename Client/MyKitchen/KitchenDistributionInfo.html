@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ChiefInfo</title>
+    <link rel="stylesheet" href="lib\js\jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src= "lib\js\jquery.js"></script>
+	<script type="text/javascript" src="lib\js\jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div>
+	<table class = "InfoTable" id = "MyTable">
+		<tbody>
+			<th>
+				<label for="bday">提供方式：</label>
+			</th>
+			<th>
+				<input type = "button" id = "bt1" value = "堂吃">
+			</th>
+			<th>
+				<input type = "button" id = "bt2" value = "自取">
+			</th>
+			<th>
+				<input type = "button" id = "bt3" value = "外送">
+			</th>
+		</tbody>
+	</table>
+	</div>
+  <div data-role="content">
+    <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <label for="fullname">配送范围：</label>
+        <input type="text" name="fullname" id="fullname" placeholder="">       
+        <hr/>
+        <label for="bday">外送价格：</label>
+        <input type="text" name="bday" id="bday">
+      </div>
+      <input type="submit" data-inline="true" value="确定">
+    </form>
+  </div>
